@@ -4,10 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="app.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
     <title>Timer App</title>
 </head>
 <body>
-    
+    <div class="timer">
+        <div class="controls">
+            <input id="duration" type="text" value="3" />
+            <div>
+                <button id="start"><i class="fa-solid fa-play"></i></button>
+                <button id="pause"><i class="fa-regular fa-circle-pause"></i></button>
+            </div>
+        </div>
+        <svg class="dial">
+            <circle 
+                r="190" 
+                cx="200" 
+                cy="200"
+                stroke="blue"
+                stroke-width="15"
+                transform="rotate(-90 200 200)"
+                fill="transparent"/>
+        </svg>
+    </div>
+    <script src="timer.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
